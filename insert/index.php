@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD</title>
+    <title>Crear</title>
     <link rel="stylesheet" href="./../CSS/bootstrap.min.css">
 </head>
 
-<body>   
+<body>
+    <?php include_once "./../views/menu.php" ?>
     <div class="card col-8 mt-5 mx-auto" style="width: 18rem;">
         <form action="./save.php" method="POST" class="card-body">
             <h1 class="card-tittle">Insert (Crear)</h1>
@@ -28,6 +29,20 @@
             <button class="btn btn-primary col-12  mt-3">Guardar</button>
         </form>
     </div>
+    <br>
+    <?php
+        if(isset($_GET['status'])){
+        ?>
+            <center>
+                <div>
+                    <div class="alert alert-success" role="alert" style="width: 300px;">
+                        Contacto almacenado
+                    </div>
+                </div>
+            </center>
+        <?php
+        }
+    ?> 
 
     <script src="./../js/bootstrap.min.js"></script>
 </body>

@@ -9,9 +9,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo APP_URL;?>/insert">Insert</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo APP_URL;?>/insert">Agregar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="<?php echo APP_URL;?>/list">Listar</a>
         </li>
       </ul>
     </div>
