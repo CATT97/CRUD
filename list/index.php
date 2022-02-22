@@ -17,7 +17,7 @@ function listar()
             <td><?php echo $row['nombre']; ?></td>
             <td><?php echo $row['telefono']; ?></td>
             <td><?php echo $row['email']; ?></td>
-            <td></td>
+            <td><a class="btn btn-primary btn-sm" href="<?php echo APP_URL; ?>/details/index.php?id=<?php echo $row['id']; ?>">Detalles</a></td>
         </tr>
 <?php
     }
