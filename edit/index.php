@@ -1,20 +1,5 @@
 <?php
-    function detalles($id)
-    {
-        require_once "./../database/conexion.php";
-        $query = "SELECT * FROM contactos WHERE id = $id";
-        $data = mysqli_query($conection, $query, MYSQLI_ASSOC);
-        $datos = [];
-        foreach ($data as $row) {
-            array_push($datos, [
-                "id" => $row['id'],
-                "nombre" => $row['nombre'],
-                "telefono" => $row['telefono'],
-                "email" => $row['email']
-            ]);
-        }
-        return $datos[0];
-    }
+    include_once './../details/list.php';
     $datos = detalles($_GET['id']);
 ?>
 <!DOCTYPE html>
